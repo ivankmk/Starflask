@@ -1,9 +1,16 @@
 from flask import Flask
 from config import Config
+from flask_sqlalchemy import SQLAlchemy
+from flask_migrate import Migrate
+from flask_login import LoginManager
+from flask_bootstrap import Bootstrap
 
 app = Flask(__name__)
 app.config.from_object(Config)
-# http://flask.pocoo.org/docs/1.0/api/?highlight=app%20config#flask.Config.from_object
+db = SQLAlchemy(app)
+migrate = Migrate(app, db)
+login = LoginManager(app)
+login.login_view = 'login'
+bootstrap = Bootstrap(app)
 
-
-from app import routes
+from app import routes, models
