@@ -3,7 +3,7 @@
 ![Python](https://img.shields.io/badge/python-v3.6-blue.svg)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
-<p align="center"><img src="https://github.com/ivankmk/Starflask/blob/master/app/static/images/readme_screeshot_1.png" width="100%"><p>
+<p align="center"><img src="https://github.com/ivankmk/Starflask/blob/master/app/static/images/readme_screeshot.png" width="100%"><p>
 
 
 ## Setup
